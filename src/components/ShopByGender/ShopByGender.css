@@ -127,8 +127,10 @@
     width: 100%;
 }
 .gender-tab{
-    height: 100%;   
-    background-size: contain;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
 }
 
 }
