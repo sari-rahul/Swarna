@@ -103,6 +103,9 @@
 }
 }
 @media (max-width: 480px) {
+.shop-by-gender-section{
+    height: 100vh;
+}
   .heading-section h2{
     font-size: 2rem;
 }

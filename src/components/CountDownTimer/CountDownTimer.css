@@ -47,5 +47,7 @@
     font-size: 1.25rem;
     padding: 8px 10px;
 }
-
+.countdown-timer{
+  padding: 12px;
+}
 }

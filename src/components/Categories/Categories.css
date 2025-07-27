@@ -10,7 +10,7 @@
 
 .our-categories-section h4{
     font-size: 1.25rem;
-    color: var(--gold) ;
+    color: var(--dark-gold) ;
 
     margin: 0;
 }
@@ -52,7 +52,7 @@
 .categories-list-item p{
     margin-top: 10px;
     margin-bottom: 10px;
-    color: #132026;
+    color: var(--primary-green);
     font-size: max(1.4vw,14px);
 }
 .categories-list-item{
@@ -105,11 +105,6 @@
 }
 .categories-list-wrapper{
     width: 80%;
-}
-}
-@media (max-width: 786px) {
-.shop-by-gender-section-inner-container {
-    width: 80vw;
 }
 }
 

@@ -60,6 +60,7 @@
     cursor: not-allowed;
     transform: scale(0.9);
 }
+
 @media (max-width: 1024px) {
 .customer-reviews-section{
     height: 60vh;
@@ -77,13 +78,13 @@
     justify-content: space-evenly;
 }
 .review-heading-section h2{
-    font-size: 2.25rem;
+    font-size: 2rem;
     text-align: left;
 }
 .review-heading-section{
     width: 90%;
 }
-.icon-section i{
+.customer-reviews-section .icon-section i{
     font-size: 24px;
 }
 .arrow-outer-circle{

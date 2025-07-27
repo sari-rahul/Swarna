@@ -70,7 +70,7 @@
 }
 @media (max-width: 480px) {
 .bridal-heading-section h2{
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
 .bridal-section{
     width: 85vw;
@@ -92,8 +92,16 @@
 
   .grid-section {
     padding: 0px;
+  height: 27vh;
+
   }
 .bridal-heading-section p{
     padding-bottom: 2.25rem;
+    font-size: 0.9rem;
+
+}
+.bridal-heading-section p{
+    text-align:justify;
+    padding: 1.25rem;
 }
 }

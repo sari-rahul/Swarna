@@ -46,7 +46,7 @@
 .tagline h4 {
     font-size: 2rem;
     padding-bottom: 20px;
-    color:var(--gold);
+    color:var(--dark-gold);
 }
 .tagline h1 {
     margin: 0;
@@ -150,6 +150,9 @@
   .banner-section .image-section{
       height: 50vh;
   }
+  .navbar-mobile .search-bar .icon-section {
+    gap: 12px;
+  }
   .image-section{
       height: 50vh;
   }
@@ -161,15 +164,15 @@
     align-items: center;
   }
   .tagline h1 {
-    font-size: 1.6rem;
+    font-size: 2rem;
   }
 
   .tagline h4 {
-    font-size: 0.85rem;
+    font-size: 0.9rem;
   }
 
   .small-paragraph h6 {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
   }
 
 }
