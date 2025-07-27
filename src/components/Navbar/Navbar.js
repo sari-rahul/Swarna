@@ -93,7 +93,9 @@ const Navbar = ({setShowLogin , isLoggedIn}) => {
           <li><i className="fa-solid fa-heart"></i> Liked</li>
           <li><i className="fa-solid fa-location-dot"></i> Location</li>
           <li><i className="fa-solid fa-cart-shopping"></i> Cart</li>
-          <li><button className="signup-btn">Signup</button></li>
+          <li>
+            <button className="signup-btn" onClick={()=>setShowLogin(true)}>Signup</button>
+          </li>
         </ul>
       </div>
       {/* Backdrop */}

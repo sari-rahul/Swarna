@@ -118,9 +118,7 @@
   .bannersection-innercontainer{
     height: 90vh;
   }
-  .banner-section .image-section{
-    height: 100vh;
-  }
+  
   .tagline h1 {
     font-size: 1.8rem;
   }
@@ -143,15 +141,21 @@
 }
 
 @media (max-width: 480px) {
-.banner-section{
-    height: 100vh;
-}
-.bannersection-innercontainer{
-    height:100vh;
-}
-.image-section{
-    height: 100vh;
-}
+  .banner-section{
+      height: 100vh;
+  }
+  .bannersection-innercontainer{
+      height:100vh;
+  }
+  .banner-section .image-section{
+      height: 50vh;
+  }
+  .image-section{
+      height: 50vh;
+  }
+  .tagline-section {
+      height: 50vh;
+  }
 
   .tagline{
     align-items: center;
