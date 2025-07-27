@@ -2,34 +2,35 @@ import React, { useEffect } from 'react'
 import './CountDownTimer.css';
 import { useState } from 'react';
 
+
+function calculateTimeLeft(targetDate){
+    const differnce = new Date (targetDate) - new Date();
+    let timeLeft = {};
+
+    if (differnce > 0) {
+        timeLeft = {
+            days: String(Math.floor(differnce/(1000 * 60 * 60 * 24))).padStart(2, "0"),
+            hours: String(Math.floor((differnce/(1000 * 60 * 60))% 24)).padStart(2, "0"),
+            minutes: String(Math.floor((differnce/1000 / 60) % 60)).padStart(2, "0"),
+            seconds: String(Math.floor((differnce/1000)% 60)).padStart(2, "0"),
+        };
+    }else {
+        timeLeft = {
+            days :"00",
+            hours :"00",
+            minutes :"00",
+            seconds :"00",
+        };
+    }
+    return timeLeft;
+};
+
 const CountDownTimer = ({targetDate}) => {
-    const calculateTimeLeft = ()=>{
-        const differnce = new Date (targetDate) - new Date();
-        let timeLeft = {};
-
-        if (differnce > 0) {
-            timeLeft = {
-                days: String(Math.floor(differnce/(1000 * 60 * 60 * 24))).padStart(2, "0"),
-                hours: String(Math.floor((differnce/(1000 * 60 * 60))% 24)).padStart(2, "0"),
-                minutes: String(Math.floor((differnce/1000 / 60) % 60)).padStart(2, "0"),
-                seconds: String(Math.floor((differnce/1000)% 60)).padStart(2, "0"),
-            };
-        }else {
-            timeLeft = {
-                days :"00",
-                hours :"00",
-                minutes :"00",
-                seconds :"00",
-            };
-        }
-        return timeLeft;
-    };
-
-    const [timeLeft , setTimeLeft] = useState(calculateTimeLeft());
+    const [timeLeft , setTimeLeft] = useState(calculateTimeLeft(targetDate));
 
     useEffect(()=>{
         const timer = setInterval(()=>{
-            setTimeLeft(calculateTimeLeft());
+            setTimeLeft(calculateTimeLeft(targetDate));
         },1000);
         return () => clearInterval(timer);
     }, [targetDate]);

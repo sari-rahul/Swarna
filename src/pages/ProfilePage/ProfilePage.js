@@ -83,7 +83,7 @@ const ProfilePage = ({isLoggedIn}) => {
       <div className='profile-image-section'>
         {ProfileImage?(
             <>
-                <img src={ProfileImage} className='profile-img'/>
+                <img src={ProfileImage} className='profile-img' alt='profile-image'/>
                 <button onClick={removeImage} className='photo-remove-button'>Remove Photo</button></>
         ):(
             <>
