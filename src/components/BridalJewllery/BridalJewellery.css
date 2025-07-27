@@ -1,0 +1,99 @@
+.bridal-section{
+    height: 100vh;
+    width: 70vw;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-around;
+}
+.bridal-heading-section p{
+    text-align:justify;
+    font-size: 1.1rem;
+    padding: 1.25rem;
+}
+.bridal-heading-section{
+    padding-top: 20px;
+}
+.bridal-heading-section h4{
+    color:var(--dark-gold);
+    font-size: 1.25rem;
+    text-align: center;
+    margin: 0;
+    padding-top: 20px;
+    padding-bottom: 10px;
+
+}
+.bridal-heading-section h2{
+    color:var(--primary-green);
+    font-size: 3rem;
+    margin: 0;
+}
+.grid-section{
+    height:70vh;
+    padding: 20px;
+}
+
+.photo-grid {
+  display: grid;
+  height:100%;
+  gap: 10px;
+}
+
+.grid-item {
+  position: relative;
+  overflow: hidden;
+
+  cursor: pointer;
+}
+
+.grid-item img {
+  height: auto;
+  object-fit: cover;
+}
+
+.grid-item:nth-child(1) { grid-area: earrings; }
+.grid-item:nth-child(2) { grid-area: necklaces; }
+.grid-item:nth-child(3) { grid-area: antique; }
+.grid-item:nth-child(4) { grid-area: bangles; }
+.grid-item:nth-child(5) { grid-area: rings; }
+.grid-item:nth-child(6) { grid-area: main-image; }
+
+@media (max-width: 1024px) {
+  .bridal-section{
+    height: 75vh;
+}
+.grid-section {
+    height: 45vh;
+}
+}
+@media (max-width: 480px) {
+.bridal-heading-section h2{
+    font-size: 2.5rem;
+}
+.bridal-section{
+    width: 85vw;
+    height: 80vh;
+}
+.photo-grid {
+    grid-template-areas:
+      "main-image"
+      "antique"
+      "bangles"
+      "rings";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
+  .grid-item img {
+    width: 100%;
+  }
+
+  .grid-section {
+    padding: 0px;
+  }
+.bridal-heading-section p{
+    padding-bottom: 2.25rem;
+}
+}

@@ -1,0 +1,135 @@
+.shop-by-gender-section{
+    height: 105vh;
+    background-color: var(--bcg-pink);
+}
+
+.shop-by-gender-section-inner-container{
+    width: 70vw;
+    margin: auto;
+    background-image: url('../../assets/GenderShoppingBg.png');
+    background-repeat: no-repeat;
+    padding: 12px ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.gender-tabs-section{
+    width: 100%;
+    height: 70vh;
+    padding-top: 20px;
+
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.gender-tabs{
+    width: 100%;
+}
+.gender-tab{
+    height: 100%;
+
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+
+    color: var(--primary-green);
+    font-size: 1.25rem;
+    border: 4px solid transparent;
+
+    cursor: pointer;
+}
+
+.gender-tab :hover{
+    border: 4px solid var(--gold);
+}
+
+.gender-name{
+    padding: 12px;
+    font-size: 18px;
+}
+
+.heading-section h2{
+    color:var(--primary-green);
+    font-size: 3rem;
+    margin: 0;
+    padding-top: 20px;
+}
+
+.heading-section h4{
+    color:var(--dark-gold);
+    font-size: 1.25rem;
+    text-align: center;
+    margin: 0;
+}
+
+#men{
+    background-image: url('../../assets/MensJewllery.png');
+}
+
+#women{
+    background-image: url('../../assets/WomensJewellery.png');
+}
+
+#kids{
+    background-image: url('../../assets/KidsJewellery.png');
+}
+
+@media (max-width: 1024px) {
+.gender-tabs {
+    width: 50%;
+    height: 100%;
+}
+.gender-tab{
+    height: 80%;
+}
+.gender-tabs-section {
+    width: 100%;
+    height: 50vh;
+}
+.shop-by-gender-section {
+    height: 100vh;
+    background-color: #FCF0F0;
+}
+.shop-by-gender-section-inner-container{
+    width: 70vw;
+    height: 100%;
+}
+}
+@media (max-width: 480px) {
+  .heading-section h2{
+    font-size: 2rem;
+}
+.heading-section h4{
+    font-size: 1.25rem;
+}
+.shop-by-gender-section-inner-container{
+    width: 80vw;
+    margin: auto;
+    padding: 12px ;
+    height: 90%;
+}
+.gender-tabs-section{
+    height: 85vh;
+    flex-direction: column;
+
+    gap: 40px;
+
+}
+.gender-tabs{
+    height: 100%;
+    width: 100%;
+}
+.gender-tab{
+    height: 100%;   
+    background-size: contain;
+}
+
+}
+

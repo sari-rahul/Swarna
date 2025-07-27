@@ -1,0 +1,46 @@
+.outer-frame {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 2px solid #fffdff;
+  height: 300px;
+  width: 300px;
+}
+.inner-frame{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: 250px;
+    width: 250px;
+    border: 2px solid  var(--gold);
+}
+.inner-frame p{
+    font-size: 20px;
+    color: #F4E7D6;
+}
+@media (max-width: 1024px) {
+.inner-frame{
+    height: 150px;
+    width: 150px;
+}
+.outer-frame{
+  height: 200px;
+  width: 200px;
+}
+}
+@media (max-width: 480px) {
+  .inner-frame{
+    height: 150px;
+    width: 150px;
+}
+.outer-frame{
+  height: 200px;
+  width: 200px;
+}
+}

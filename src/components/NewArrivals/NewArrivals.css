@@ -1,0 +1,90 @@
+.new-arrivals{
+    height:90vh;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: flex-start;
+}
+.top-section{
+    background-image: url('../../assets/NewArrivalbanner.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    height: 60%;
+}
+.top-section-inner-section{
+    width: 70vw;
+    margin: auto;
+    padding-top: 30px;
+}
+.top-section h2{
+    color:var(--bright-golden);
+    font-size: 3rem;
+    padding-bottom: 1.25rem;
+}
+.top-section p{
+    color:#FCF1E3;
+    font-size: 1.1rem;
+    text-align: left;
+}
+.bottom-section{
+    height:2%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+@media (max-width: 1024px) {
+.new-arrivals{
+    height:50vh;
+}
+.top-section {
+    height: 25vh;
+}
+.top-section p{
+    text-align: justify;
+}
+.bottom-section{
+    height: 25vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+}
+
+@media (max-width: 480px) {
+    .new-arrivals{
+        height:fit-content;
+    }
+    .top-section{
+        height: fit-content;
+        padding-bottom: 2rem;
+    }
+     
+    .top-section-inner-section{
+        width: 85vw;
+    }
+    .top-section h2{
+        font-size: 2.5rem;
+        padding-bottom: 1rem;
+    }
+    .top-section p{
+        color:#FCF1E3;
+        font-size: 1rem;
+        text-align: justify;
+    }
+    .bottom-section{
+        height: 60%;
+        display: flex;
+        flex-direction: column;
+        padding: 1.5rem
+}
+}

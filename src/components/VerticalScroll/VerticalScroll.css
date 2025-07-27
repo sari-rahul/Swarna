@@ -1,0 +1,38 @@
+.scroll-grid-wrapper {
+  height: 100%;
+  overflow: hidden;
+  width: 200px;
+  position: relative;
+}
+.scroll-grid {
+  display: flex;
+  flex-direction: column;
+  animation: scroll-up 30s linear infinite;
+}
+.scroll-item {
+  margin-bottom: 10px;
+  height: 300px; 
+  flex-shrink: 0;
+}
+
+.scroll-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+@keyframes scroll-up {
+  0% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(-50%);
+  }
+}
+
+@media (max-width: 1024px) {
+.scroll-item {
+  margin-bottom: 10px;
+  height: 200px; 
+  flex-shrink: 0;
+}
+}

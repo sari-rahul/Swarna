@@ -1,0 +1,80 @@
+.promo-offer-section{
+    height: 100vh;
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.timer-section{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+
+    background-color: var(--primary-green);
+
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+.timer-section h2{
+    margin: 0;
+
+    color:var(--bright-golden);
+    font-size: 3rem;
+}
+.timer-section h4{
+    margin: 0;
+
+    color:#FCF1E3;
+    font-size: 1.25rem;
+}
+
+.poster-section{
+    height: 60%;
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    justify-content: space-around;
+}
+.poster-section #poster{
+    height: 100%;
+    width: 100%;
+
+    background-image: url('../../assets/PromoOfferPoster.png'); 
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;   
+}
+@media (max-width: 1024px){
+.promo-offer-section {
+    height: 50vh;}
+
+.timer-section h2{
+    font-size: 2rem;
+}
+}
+@media (max-width: 480px) {
+.timer-section h2{
+    font-size: 2.5rem;
+}
+.timer-section{
+    flex-direction: column;
+    justify-content: space-between;
+
+
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+.promo-offer-section{
+    margin-top: 4rem;
+    height: 60vh;
+}
+.poster-section{
+    height: 25%;
+}
+}

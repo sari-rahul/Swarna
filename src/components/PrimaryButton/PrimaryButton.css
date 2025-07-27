@@ -1,0 +1,35 @@
+.primary-button{
+    width: 250px;
+    background-color: #132026;
+    color: #D6AD61;
+    
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    cursor: pointer;
+
+}
+.primary-button button{
+    background-color: #132026; 
+    color: #D6AD61;
+
+    font-size: 24px;
+    border: 0;
+
+    cursor: pointer;
+
+}
+.primary-button i{
+    background-color: #D6AD61; 
+    color: #132026;
+    padding: 8px;
+    border-radius: 100%;
+}
+    

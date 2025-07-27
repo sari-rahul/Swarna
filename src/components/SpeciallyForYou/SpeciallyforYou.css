@@ -1,0 +1,52 @@
+.specially-for-you-section{
+    height:50vh;
+    background-image: url('../../assets/SpeciallForYouBg.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+#dark-bg{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.specially-for-you-inner-frame{
+    height: 80%;
+    width:95%;
+    border: 2px solid  var(--bright-golden);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.specially-for-you-inner-frame h2{
+    color:var(--bright-golden);
+    font-size: 3rem;
+}
+@media (max-width: 1024px) {
+.specially-for-you-section{
+    height:30vh;
+}
+.specially-for-you-inner-frame{
+    width:90%;
+    justify-content: space-evenly;
+
+}
+}
+@media (max-width: 480px) {
+
+.specially-for-you-inner-frame h2{
+    font-size: 2.5rem;
+}
+.specially-for-you-inner-frame{
+    width:80%;
+    justify-content: space-evenly;
+
+}
+}

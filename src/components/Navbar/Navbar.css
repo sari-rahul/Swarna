@@ -1,0 +1,348 @@
+.navbar{
+    background-color: var(--primary-green);
+    color:var(--gold) ;
+
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: flex-start;
+}
+.navbar-mobile{
+    display: none;
+}
+.left-section{
+    width: 33%;
+    display: flex;
+    flex-direction: column;  
+    gap: 16px;
+    margin-left: 90px; 
+}
+.left-section input{
+    margin: 0;
+    padding: 8px 12px 8px 8px;
+    width: 100%;
+    background-color: var(--primary-green);
+    border: none;
+
+    color:var(--gold); ;   
+}
+.left-section input:focus-visible{
+    outline: none;
+}
+.left-section .input-section{
+    border-bottom: 1px solid var(--gold);;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 0;
+
+}
+.left-section .icon-section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+}
+.left-section input :active{
+    border-bottom: 2px solid var(--gold);
+}
+.right-section{
+    width: 33%;
+    display: flex;
+    flex-direction: column; 
+
+    margin-right: 90px; 
+}
+.right-section .signup-button{
+
+    width: 50%;
+    margin: auto;
+    margin-bottom: 16px;
+    padding: 10px;
+
+    background-color:var(--primary-green);;
+    color: var(--gold);
+    border: 2px solid var(--gold);
+    border-radius: 20px;
+
+    font-size: 18px;
+}
+.right-section .navbar-icons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+
+    list-style: none;
+    gap: 40px;
+}
+.right-section .navbar-icons i{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.navbar-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar-menu a{
+    text-decoration: none;
+    color: var(--gold) ;
+    font-size: 1.3rem;
+}
+
+.logo-section{
+    width:33%;
+}
+.logo-section img{
+    width: 80%;
+}
+
+.side-menu {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  height: 100vh;
+  width: 250px;
+  background-color:var(--bcg-gold);
+  z-index: 1001;
+  padding: 2rem 1rem;
+  transition: left 0.3s ease-in-out;
+}
+.side-menu.open {
+  left: 0;
+  height: 100%;
+  background-color: var(--bcg-golden);
+}
+
+.side-menu .close-btn {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+.side-menu ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 3rem;
+}
+
+.side-menu ul li {
+  margin: 1rem 0;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--bcg-pink);
+}
+
+.signup-btn {
+  padding: 0.5rem 1rem;
+  background-color: var(--primary-green);
+  color: var(--bcg-pink);
+  border: none;
+  cursor: pointer;
+  margin-top: 2rem;
+}
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.4);
+  z-index: 1000;
+}
+
+
+@media (max-width: 768px) {
+.logo-section {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+ .left-section{ 
+    display: none; 
+}
+.right-section{
+    display: none; 
+}
+.logo-section{
+    width:100%;
+    height: 100%;
+}
+.navbar-mobile{
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    background-color: #fff;
+}
+.navbar-mobile .inner-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    padding: 12px;
+}
+.navbar-mobile .inner-container .burger-menu{
+    font-size: 24px;
+    color: var(--gold);
+}
+.navbar-mobile .search-bar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 2px solid var(--gold);
+    border-radius: 4px;
+    width: 90%;
+    margin: auto;
+    margin-top: 12px;
+    padding: 8px;
+
+}
+.navbar-mobile .search-bar input{
+    width: 100%;
+    padding: 12px;
+    border: none;
+}
+.navbar-mobile .search-bar i{
+    color: #D6AD61;
+
+}
+.scroll-menu-wrapper {
+  overflow-x: auto;
+  width: 100%;
+  background-color: white; 
+}
+
+.scroll-menu {
+  display: flex;
+  flex-direction: row;
+  white-space: nowrap;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.scroll-menu a {
+  flex: 0 0 auto;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border: 2px solid #D6AD61;
+  border-radius: 4px;
+}
+.scroll-menu-wrapper::-webkit-scrollbar {
+  display: none;        
+}
+
+.scroll-menu a:hover {
+  background: #f4cb94;
+}
+
+}
+
+@media (max-width: 1024px) {
+ .left-section{ 
+    display: none; 
+}
+.right-section{
+    display: none; 
+}
+.logo-section{
+    width:100%;
+    height: 100%;
+}
+.logo-section img{
+    width: 50%;
+}
+.navbar-mobile{
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    background-color: #fff;
+}
+.navbar-mobile .inner-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    padding: 12px;
+}
+.navbar-mobile .inner-container .burger-menu{
+    font-size: 24px;
+    color: var(--gold);
+}
+.navbar-mobile .search-bar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 2px solid var(--gold);
+    border-radius: 4px;
+    width: 90%;
+    margin: auto;
+    margin-top: 12px;
+    padding: 8px;
+
+}
+.navbar-mobile .search-bar input{
+    width: 100%;
+    padding: 12px;
+    border: none;
+}
+.navbar-mobile .search-bar .icon-section{
+    gap: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+
+}
+.navbar-mobile .search-bar i{
+    color: var(--gold);
+
+}
+.scroll-menu-wrapper {
+  overflow-x: auto;
+  width: 100%;
+  background-color: white; 
+}
+.scroll-menu {
+  display: flex;
+  flex-direction: row;
+  white-space: nowrap;
+  gap: 1rem;
+  padding: 1rem;
+  border-bottom: 1px solid grey;
+
+}
+.scroll-menu a {
+  flex: 0 0 auto;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border: 2px solid var(--gold);
+  border-radius: 4px;
+}
+.scroll-menu-wrapper::-webkit-scrollbar {
+  display: none;        
+}
+.scroll-menu a:hover {
+  background: #f4cb94;
+}
+}
+@media (max-width: 480px) {
+.logo-section img{
+    width: 70%;
+}
+.bannersection-innercontainer {
+    height: 100vh;
+}
+}

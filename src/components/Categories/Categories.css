@@ -1,0 +1,125 @@
+.our-categories-section{
+    height: 90vh;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.our-categories-section h4{
+    font-size: 1.25rem;
+    color: var(--gold) ;
+
+    margin: 0;
+}
+
+.our-categories-section h2{
+    font-size: 2.5rem;
+    color: var(--primary-green) ;
+
+    margin: 0;
+
+}
+.categories-list-wrapper{
+    width: 85%;
+    overflow-x: hidden; 
+    position: relative;
+}
+.categories-list{
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1.25rem;
+
+    text-align: center;
+    margin:1.25rem 0px;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+}
+.categories-list::-webkit-scrollbar{
+    display: none;
+}
+.categories-list-item img{
+    width:15vw;
+    height: 300px;
+    object-fit: cover;
+
+    cursor: pointer;
+}
+.categories-list-item p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #132026;
+    font-size: max(1.4vw,14px);
+}
+.categories-list-item{
+    width: 20%;
+    background-color: var(--bcg-pink);
+    border: 4px solid transparent ;
+    border-bottom: 4px solid var(--gold) ;
+    cursor: pointer;
+
+    text-align: center;
+}
+.categories-list-item:hover{
+    
+    border: 4px solid var(--gold);
+    
+}
+@media(max-width:1024px){
+.our-categories-section{
+    height: 60vh;
+}
+.categories-list-item{
+    width: 25vw;
+    border: 0;
+    border-bottom: 4px solid var(--gold);
+}
+.categories-list-item img{
+    width: 25vw;
+    height: 300px;
+    object-fit: cover;
+
+    cursor: pointer;
+}
+.categories-list-wrapper{
+    width: 90%;
+}
+
+}
+@media (max-width: 768px) {
+.categories-list-item{
+    width: 50vw;
+    border: 0;
+    border-bottom: 4px solid var(--gold);
+}
+.categories-list-item img{
+    width:50vw;
+    height: 300px;
+    object-fit: cover;
+
+    cursor: pointer;
+}
+.categories-list-wrapper{
+    width: 80%;
+}
+}
+@media (max-width: 786px) {
+.shop-by-gender-section-inner-container {
+    width: 80vw;
+}
+}
+
+@media (max-width: 480px) {
+.our-categories-section{
+    height: 70vh;
+}
+  .our-categories-section h2{
+    font-size: 2rem;
+}
+
+}
+
