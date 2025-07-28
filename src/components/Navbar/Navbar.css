@@ -142,6 +142,7 @@
 }
 
 .signup-btn {
+  width: 50%;
   padding: 0.5rem 1rem;
   background-color: var(--primary-green);
   color: var(--bcg-pink);
@@ -208,7 +209,7 @@
 }
 .navbar-mobile .search-bar input{
     width: 100%;
-    padding: 12px;
+    padding: 8px;
     border: none;
 }
 .navbar-mobile .search-bar .icon-section{
@@ -295,14 +296,16 @@
     border-radius: 4px;
     width: 90%;
     margin: auto;
-    margin-top: 12px;
     padding: 8px;
 
 }
 .navbar-mobile .search-bar input{
     width: 100%;
-    padding: 12px;
+    padding: 8px;
     border: none;
+}
+.navbar-mobile .search-bar input:focus-visible{
+    outline: none;
 }
 .navbar-mobile .search-bar i{
     color: var(--gold);
@@ -319,7 +322,7 @@
   flex-direction: row;
   white-space: nowrap;
   gap: 1rem;
-  padding: 1rem;
+  padding: 0.3rem;
 }
 
 .scroll-menu a {
@@ -343,7 +346,7 @@
 
 @media (max-width: 480px) {
 .logo-section img{
-    width: 70%;
+    width: 100%;
 }
 .bannersection-innercontainer {
     height: 100vh;

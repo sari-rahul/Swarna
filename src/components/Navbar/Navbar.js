@@ -85,17 +85,22 @@ const Navbar = ({setShowLogin , isLoggedIn}) => {
       <div className={`side-menu ${menuOpen ? 'open' : ''}`}>
         <button className="close-btn" onClick={() => setMenuOpen(false)}>×</button>
         <ul>
-          <li>
-            <Link to="/Profile">
-              <i className="fa-solid fa-user"></i> Profile
-            </Link>
-          </li>
-          <li><i className="fa-solid fa-heart"></i> Liked</li>
-          <li><i className="fa-solid fa-location-dot"></i> Location</li>
-          <li><i className="fa-solid fa-cart-shopping"></i> Cart</li>
-          <li>
-            <button className="signup-btn" onClick={()=>setShowLogin(true)}>Signup</button>
-          </li>
+          {isLoggedIn ? (
+            <>
+              <li>
+                <Link to="/Profile">
+                  <i className="fa-solid fa-user"></i> Profile
+                </Link>
+              </li>
+              <li><i className="fa-solid fa-heart"></i> Liked</li>
+              <li><i className="fa-solid fa-location-dot"></i> Location</li>
+              <li><i className="fa-solid fa-cart-shopping"></i> Cart</li>
+            </>
+          ) :(
+            <li>
+              <button className="signup-btn" onClick={()=>setShowLogin(true)}>Signup</button>
+            </li>
+          ) }
         </ul>
       </div>
       {/* Backdrop */}
